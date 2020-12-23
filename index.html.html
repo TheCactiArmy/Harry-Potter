@@ -1,0 +1,192 @@
+<!doctype html><html><head><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><style type="text/css">h1 {
+  text-align: center;
+  color: #59884F;
+}
+
+.section {
+  border: solid;
+  display: flex;
+  align-items: stretch;
+  background-color: #A1CC98;
+  margin-top: 4px;
+}
+
+.item {
+  border: dashed 2px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #C4E4BE;
+  width: 50%;
+  text-align: center;
+}
+
+#button {
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  left: 47.5%;
+  bottom: 5px;
+}
+
+#prompt {
+  text-align: center;
+  color: #90B089;
+}
+
+.answer {
+  color: #C4E4BE;
+}
+
+.r-answer {
+  color: black;
+}
+</style></head><body><h1>Harry Potter Characters</h1>
+
+<p id="prompt">Match each question with the character it describes</p>
+		<button id = "button">Answers</button>
+
+<div id="main">
+	<div class="section" id="row1">
+		<div class="item">
+			<p>Which character is a dog animagus?</p>
+    <div class = "answer">
+    <p>Sirius Black</p>
+    </div>
+				<div class="names">
+					<h3>Harry Potter</h3>
+				</div>
+		</div>
+		<div class="item">
+			<p>Which character was the Head of Slytherin</p>
+	<div class="answer">
+		<p>Severus Snape</p>
+	</div>
+	<div class="names">
+		<h3>Ron Weasley</h3>
+	</div>
+		</div>
+	</div>
+</div>
+
+<div class="section" id="row2">
+	<div class="item">
+		<p>Which character taught Transfiguration?</p>
+
+	<div class="answer">
+		<p>Minerva Mcgonagall</p>
+	</div>
+		<div class="names">
+			<h3>Hermione Granger</h3>
+		</div>
+	</div>
+	<div class="item">
+		<p>Which character had a baby dragon?</p>
+
+	<div class="answer">
+		<p>Rubeus Hagrid</p>
+	</div>
+		<div class="names">
+			<h3>Draco Malfoy</h3>
+		</div>
+	</div>
+
+</div>
+</div>
+
+<div class="section" id="row3">
+	<div class="item">
+		<p>Which character had a lightning scar?</p>
+	<div class="answer">
+		<p>Harry Potter</p>
+	</div>
+	<div class="names">
+		<h3>Sirius Black</h3>
+	</div>
+	</div>
+	<div class="item">
+		<p>Which character was prefect for Slytherin?</p>
+	<div class="answer">
+		<p>Draco Malfoy</p>
+	</div>
+		<div class="names">
+			<h3>Remus Lupin</h3>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="section" id="row4">
+	<div class="item">
+		<p>Which character is a werewolf?</p>
+	<div class="answer">
+		<p>Remus Lupin</p>
+	</div>
+		<div class="names">
+			<h3>Severus Snape</h3>
+		</div>
+	</div>
+	<div class="item">
+		<p>Which character has 6 siblings</p>
+	<div class="answer">
+		<p>Ron Weasley</p>
+	</div>
+			<div class="names">
+				<h3>Albus Dumbledore</h3>
+			</div>
+	</div>
+</div>
+
+<div id="main">
+	<div class="section" id="row1">
+		<div class="item">
+			<p>Which character was headmaster of Hogwarts?</p>
+	<div class="answer">
+		<p>Albus Dumbledore</p>
+	</div>
+			<div class="names">
+				<h3>Voldemort</h3>
+			</div>
+		</div>
+		<div class="item">
+			<p>Which character had the nickname "Looney"?</p>
+	<div class="answer">
+		<p>Luna Lovegood</p>
+	</div>
+		<div class="names">
+			<h3>Rubeus Hagrid</h3>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div id="main">
+	<div class="section" id="row1">
+		<div class="item">
+			<p>Which character is referred to as "He who must not be named"?</p>
+	<div class="answer">
+		<p>Voldemort</p>
+	</div>
+		<div class="names">
+			<h3>Minerva Mcgonagall</h3>
+		</div>
+		</div>
+		<div class="item">
+			<p>Which character has muggle parents?</p>
+	<div class="answer">
+		<p>Hermione Granger</p>
+	</div>
+				<div class="names">
+					<h3>Luna Lovegood</h3>
+				</div>
+		</div>
+	</div>
+</div>
+
+</div><script type="text/javascript">$(function () {
+  $(".names").draggable();
+});
+
+$("#button").click(function () {
+  $(".answer").addClass("r-answer");
+  $(".answer").removeClass("answer");
+});
+</script></body><html>
